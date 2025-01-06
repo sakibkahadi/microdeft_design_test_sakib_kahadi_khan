@@ -4,6 +4,7 @@ import { CiLocationOn, CiMail } from "react-icons/ci";
 import { FaArrowRight, FaLinkedinIn, FaSquareFacebook, FaTwitter } from "react-icons/fa6";
 import logo from "../assets/logo.png"
 import banner from "../assets/banner.png"
+import footer from "../../public/bg.png"
 import Image from "next/image";
 export default function Home() {
   return (
@@ -64,6 +65,35 @@ export default function Home() {
     {/* right */}
     <div>
       <Image src={banner} height={1000} width={1000} alt="banner" />
+    </div>
+   </div>
+  </Container>
+
+</div>
+
+{/* footer */}
+<div className=" h-fit py-10 bg-cover b bg-center"  style={{ backgroundImage: `url(https://i.ibb.co.com/k9v2Pzy/bg.png)` }}>
+  <Container>
+   <div className="flex justify-center gap-20 items-center">
+     {/* clients */}
+     <div className="flex flex-col justify-center items-center">
+      <h1 className="text-white font-bold text-2xl">25K+</h1>
+      <p className="text-lg text-slate-200">Happy Clients</p>
+    </div>
+    {/* clients */}
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-white font-bold text-2xl">500+</h1>
+      <p className="text-lg text-slate-200">E-Commerce Store</p>
+    </div>
+    {/* clients */}
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-white font-bold text-2xl">200k+</h1>
+      <p className="text-lg text-slate-200">Projects Success</p>
+    </div>
+    {/* clients */}
+    <div className="flex flex-col justify-center items-center">
+      <h1 className="text-white font-bold text-2xl">10+ Years</h1>
+      <p className="text-lg text-slate-200">Experience</p>
     </div>
    </div>
   </Container>
